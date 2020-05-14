@@ -1,0 +1,42 @@
+body {
+    background-image: "url('static/restaurant.jpg')";
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid blanchedalmond;
+}
+
+.tabs button {
+    border: none;
+    background-color: transparent;
+    color: blanchedalmond;
+    padding: 15px 20px;
+    font-size: 16px;
+    float: left;
+    transition: 0.3s;
+}
+
+.tabs button:active {
+    font-size: 20px;
+}
+
+.tabs button:hover {
+    background-color: rgba(255, 235, 205, 0.541);
+}
+
+#content {
+    font-size: 20px;
+    animation: fadeEffect 1s; 
+    width: 30em;
+    padding-top: 20px;
+}
+
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+from {opacity: 0;}
+to {opacity: 1;}
+}
